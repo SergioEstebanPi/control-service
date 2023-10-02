@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: control-service
+
+server:
+  port: 8081
+
+---
+spring:
+  on-profile: local
+---
+spring:
+  on-profile: develoment
+  data:
+    mongodb:
+      host: localhost
